@@ -2,6 +2,10 @@
 __pycache__/
 *.py[cod]
 *$py.class
+.DS_Store
+Data/data_notes.rtf
+Notes/
+
 
 # C extensions
 *.so
