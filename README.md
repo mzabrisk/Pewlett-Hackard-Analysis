@@ -8,7 +8,7 @@ Pewlett-Hackard is in aging company with an aging workforce. Management wants a 
 - The expected retirees are disproportionately senior level, as can be seen in the retiring titles table:   
 
 ![](https://github.com/mzabrisk/Pewlett-Hackard-Analysis/blob/0fc160fd8618055a4e1a218e872e2f0cea6537ba/Data/figures/retiring_titles.png)
-- Also from the table above, only two managerial level employees are retiring.  
+- Also from the table above, you can see that only two managerial level employees are retiring.  
 
 - Further analysis of the mentorship_eligibility table shows that the proportions of the different titles present in this population is similar to that in the retiring employees table. Table details are below, and query details are in the summary section.   
 
@@ -19,9 +19,7 @@ Pewlett-Hackard is in aging company with an aging workforce. Management wants a 
 
 ## Summary
 
-- 
-
-- Our analysis showed that >25,000 senior engineers and nearly 25,000 senior staff are expected to retire, but the impact of these numbers isn't clear without a better picture of the Pewlett-Hackard workforce. A query showing the employees who are expected to have another 10+ years in the workforce, and their titles, would be very useful.  Unfortunately, it isn't clear what year this data is from:
+- The number of roles that will need to be filled is significant. There are 72,458 employees preparing for retirment. Management needs to take a close look at the mid-level employee population to determine if there are sufficient people to fill these roles. Our analysis showed that >25,000 senior engineers and nearly 25,000 senior staff are expected to retire, but the impact of these numbers isn't clear without a better picture of the Pewlett-Hackard workforce. A query showing the employees who are expected to have another 10+ years in the workforce, and their titles, would be very useful.  Unfortunately, it isn't clear what year this data is from:
     - The most recent hires are from 2002-08-01, however we are gating our birthdates for 1952-1955. If the year is 2002, an emloyee born in 1952 would still be far from retirement. Most recent hire dates is evident from this simple query:   
 
     ![](https://github.com/mzabrisk/Pewlett-Hackard-Analysis/blob/0fc160fd8618055a4e1a218e872e2f0cea6537ba/Data/figures/titles_query.png)
@@ -31,7 +29,7 @@ Pewlett-Hackard is in aging company with an aging workforce. Management wants a 
     ![](https://github.com/mzabrisk/Pewlett-Hackard-Analysis/blob/0fc160fd8618055a4e1a218e872e2f0cea6537ba/Data/figures/employees_query.png)
 
 
-- A query similar to the retiring titles table should be performed, but on those placed on the mentorship_eligibility table, to give a better idea of the titles present within the cohort. Here is the query used for this analysis:   
+- To determine if there are sufficient qualified, retirement eligible employees to work the mentorship program, a query similar to the retiring titles table should be performed, but on those placed on the mentorship_eligibility table, to give a better picture of those needing mentorship. Based on the outcome of this query, there are more than enough eligible employees, even if only a fraction are interested. The two tables to compare are in the results section, and the query used is here: 
 
 
 ![](https://github.com/mzabrisk/Pewlett-Hackard-Analysis/blob/0fc160fd8618055a4e1a218e872e2f0cea6537ba/Data/figures/mentorship_count_query.png)
