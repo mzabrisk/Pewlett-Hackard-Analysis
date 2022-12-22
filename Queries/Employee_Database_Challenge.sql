@@ -27,7 +27,7 @@ WHERE (e.birth_date BETWEEN '1952-01-01' AND '1955-12-31')
 ORDER BY e.emp_no;
 
 -- generating unique_titles table
-SELECT DISTINCT on(emp_no)
+SELECT DISTINCT ON(emp_no)
 	emp_no,
 	first_name,
 	last_name,
@@ -63,3 +63,27 @@ LEFT JOIN titles AS t
 WHERE (t.to_date = '9999-01-01')
 	AND (e.birth_date BETWEEN '1965-01-01' AND '1965-12-31')
 ORDER BY e.emp_no
+
+
+-- ADDITIONAL QUERIES
+-- creating mentorship_count table
+SELECT COUNT(title), title
+INTO mentorship_count
+FROM mentorship_eligibility
+GROUP BY title
+ORDER BY count DESC;
+
+-- determining earliest hire date
+SELECT * 
+FROM titles
+ORDER BY from_date DESC;
+
+-- determining youngest employee
+SELECT *
+FROM employees
+ORDER BY birth_date DESC;
+
+-- determining oldest employee
+SELECT *
+FROM employees
+ORDER BY birth_date ASC;
