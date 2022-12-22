@@ -9,6 +9,7 @@ Pewlett-Hackard is in aging company with an aging workforce. Management wants a 
 ![](https://github.com/mzabrisk/Pewlett-Hackard-Analysis/blob/0fc160fd8618055a4e1a218e872e2f0cea6537ba/Data/figures/retiring_titles.png)
 - Also from the table above, only two managerial level employees are retiring.
 - Further analysis of the mentorship_eligibility table shows that the proportions of the different titles present in this population is similar to that in the retiring employees table. Table details are below, and query details are in the summary section.
+![](https://github.com/mzabrisk/Pewlett-Hackard-Analysis/blob/4dca71a2b591f943a30243f034097904ad4e8a6c/Data/figures/mentorship_count.png)
 - Despite similar proportions when comparing titles, there are significantly more employees preparing for retirement than there are eligible for the mentorship program. There are 72,458 employees preparing for retirment, while there are only 1,549 employees eligible for the mentorship program. The queries:
 ![](https://github.com/mzabrisk/Pewlett-Hackard-Analysis/blob/0fc160fd8618055a4e1a218e872e2f0cea6537ba/Data/figures/sum_queries.png)
 
