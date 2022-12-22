@@ -5,6 +5,7 @@ __pycache__/
 .DS_Store
 Data/data_notes.rtf
 Notes/
+queries.sql
 
 
 # C extensions
